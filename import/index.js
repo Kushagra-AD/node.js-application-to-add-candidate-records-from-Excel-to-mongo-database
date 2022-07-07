@@ -4,7 +4,7 @@ const client = new MongoClient(url);
 const database = 'klimbassignmentDB'
 
 async function getdata() {
-    let result = await  client.connect();
+    let result = await  client.connect();   x
     let db = result.db(database);
     let collection = db.collection('klimbassignment');
     let response = await collection.find({}).toarray();
