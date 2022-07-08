@@ -9,6 +9,9 @@ async function getdata() {
     let collection = db.collection('klimbassignment');
     let response = await collection.find({}).toarray();
     console.log(response);
+    console.log(response);
+    async.eachSeries(all, getdata(database){
+        check(database); 
     }
 
 getdata();
